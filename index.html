@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Abbos - first-year IT student at Inha University in Tashkent." />
+    <title>Abbos | IT Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="logo" href="#home" aria-label="Abbos home">A<span>/</span></a>
+        <nav aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#courses">Courses</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
+          <span class="theme-icon" aria-hidden="true"></span>
+        </button>
+      </header>
+
+      <main id="home">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Tashkent, Uzbekistan</p>
+            <h1 id="hero-title">Abbos<span class="period">.</span></h1>
+            <p class="hero-intro">First-year IT student building a practical foundation in technology, code, and thoughtful digital experiences.</p>
+            <a class="text-link" href="#projects">Explore my work <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="coordinate coordinate-one">01 / 41.3111 N</div>
+            <div class="coordinate coordinate-two">02 / 69.2797 E</div>
+            <div class="signal-ring ring-one"></div>
+            <div class="signal-ring ring-two"></div>
+            <div class="signal-ring ring-three"></div>
+            <div class="core-mark">A</div>
+            <div class="scanline"></div>
+          </div>
+        </section>
+
+        <section class="section about" id="about" aria-labelledby="about-title">
+          <div class="section-label"><span>01</span> About me</div>
+          <div class="section-content">
+            <h2 id="about-title">Learning how ideas become useful technology.</h2>
+            <div class="about-text">
+              <p>I am Abbos, a first-year Information Technology student at Inha University in Tashkent. I am curious about the systems behind the apps we use every day and enjoy turning new concepts into small, working projects.</p>
+              <p>Right now, I am focused on growing strong fundamentals: clear problem-solving, modern web development, and the discipline to keep learning.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="courses" aria-labelledby="courses-title">
+          <div class="section-label"><span>02</span> My courses</div>
+          <div class="section-content">
+            <h2 id="courses-title">Current learning log.</h2>
+            <div class="course-list">
+              <article class="course-item"><span class="course-number">01</span><h3>Programming Fundamentals</h3><p>Logic, algorithms, and the building blocks of code.</p></article>
+              <article class="course-item"><span class="course-number">02</span><h3>Web Development</h3><p>Creating accessible, responsive interfaces for the web.</p></article>
+              <article class="course-item"><span class="course-number">03</span><h3>Data &amp; Databases</h3><p>Understanding how information is structured and stored.</p></article>
+              <article class="course-item"><span class="course-number">04</span><h3>Mathematics for IT</h3><p>Developing the analytical thinking behind technical work.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="projects" aria-labelledby="projects-title">
+          <div class="section-label"><span>03</span> Projects</div>
+          <div class="section-content">
+            <div class="projects-heading">
+              <h2 id="projects-title">Small builds.<br />Real progress.</h2>
+              <p>Selected work from my learning journey so far.</p>
+            </div>
+            <div class="project-grid">
+              <article class="project-card project-card-featured">
+                <p class="project-type">01 / Web</p>
+                <h3>Personal Portfolio</h3>
+                <p>A responsive personal site designed to share my studies, projects, and next steps.</p>
+                <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                <div class="project-pattern" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+              </article>
+              <article class="project-card">
+                <p class="project-type">02 / In progress</p>
+                <h3>Study Tracker</h3>
+                <p>A focused tool for organizing coursework, deadlines, and learning goals.</p>
+                <div class="project-tags"><span>UI Design</span><span>JavaScript</span></div>
+              </article>
+              <article class="project-card">
+                <p class="project-type">03 / Exploring</p>
+                <h3>Data Visualizer</h3>
+                <p>An experiment in turning simple data into clear, useful visual stories.</p>
+                <div class="project-tags"><span>Data</span><span>Web</span></div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact" id="contact" aria-labelledby="contact-title">
+          <p class="eyebrow"><span></span> Open to learning</p>
+          <h2 id="contact-title">Let&apos;s make<br />something <em>useful.</em></h2>
+          <form id="contact-form" class="contact-form">
+            <label for="email">Your email</label>
+            <div class="form-row">
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+              <button type="submit">Send a note <span aria-hidden="true">&nearr;</span></button>
+            </div>
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>© <span id="year"></span> Abbos</p>
+        <p>Inha University in Tashkent</p>
+        <a href="#home">Back to top <span aria-hidden="true">&uarr;</span></a>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
